@@ -1,0 +1,103 @@
+2-1
+
+;
+; Lab 2.asm
+;
+; Created: 9/12/2019 9:35:55 AM
+; Author : Von Kaukeano
+;
+
+
+; Replace with your application code
+start:
+ LDI R16, 255
+ LDI R17, 0x81
+ mov R22, R16
+ mov R16,R17
+ mov R17,R22
+	here: rjmp here
+
+2-2
+
+;
+; Lab 2.asm
+;
+; Created: 9/12/2019 9:35:55 AM
+; Author : Von Kaukeano
+;
+
+
+; Replace with your application code
+start:
+ LDI R20, $10
+ STS 0x100, R0
+ LDI R17, $42
+ STS 0x101, R17
+ LDI R16,$A8
+ STS 0x102, R1
+ LDI R18, $11
+ STS 0x103,R18
+	here: rjmp here
+
+2-3
+
+;
+; Lab 2.asm
+;
+; Created: 9/12/2019 9:35:55 AM
+; Author : Von Kaukeano
+;
+
+
+; Replace with your application code
+start:
+LDI R17, $7
+STS 0x200, R17
+LDI R16, 0x20
+STS 0x220,R1
+DEC R16
+BRNE PC-3
+	here: rjmp here
+
+
+3-1
+
+;
+; Lab 2.asm
+;
+; Created: 9/12/2019 9:35:55 AM
+; Author : Von Kaukeano
+;
+
+
+; Replace with your application code
+start:
+LDI R16, $8
+LDI R17, $7
+INC R16
+DEC R17
+BRNE PC-2
+end: rjmp end
+
+
+
+3-2
+
+;
+; AssemblerApplication1.asm
+;
+; Created: 9/12/2019 11:05:43 AM
+; Author : Von Kaukeano
+;
+
+
+; Replace with your application code
+start:
+    LDI R16, $19
+	LDI R17, $e5
+	LDI R18, 3
+	SUB R20, R18
+	ADD R16, R20
+	ADD R17, R16
+end: rjmp end
+
